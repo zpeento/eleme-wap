@@ -1,8 +1,12 @@
+//提供一些工具方法
 var utils = require('./utils')
 var webpack = require('webpack')
 var config = require('../config')
+//用于合并配置文件
 var merge = require('webpack-merge')
+//开发和生产所共享的webpack配置文件
 var baseWebpackConfig = require('./webpack.base.conf')
+//webpack提供的用于操作html的插件
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 

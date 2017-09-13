@@ -6,10 +6,15 @@ if (!process.env.NODE_ENV) {
 }
 
 var opn = require('opn')
+//node原生提供的包
+//提供一些路径相关的方法
 var path = require('path')
+//用于启动web-server
 var express = require('express')
 var webpack = require('webpack')
+//http协议代理的中间件、用于代理和转发一些api
 var proxyMiddleware = require('http-proxy-middleware')
+//webpack的一些相关配置
 var webpackConfig = require('./webpack.dev.conf')
 
 // default port where dev server listens for incoming traffic
